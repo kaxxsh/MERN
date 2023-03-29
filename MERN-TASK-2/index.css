@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --bg: #101010;
+  --ascent-primary: #e0f3c1;
+  --ascent-secondary: #f1ff9f;
+  --ascent-tertiary: #feecb7;
+  --ascent-quaternary: #e7e8fc;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 0.9rem;
+
+  color-scheme: light dark;
+  color: #fff;
+  background-color: #101010;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  overflow: overlay;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.nav {
+  z-index: 100;
+  background-color: var(--bg);
+  position: sticky;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  top: 0;
+  padding: 2rem;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.logo {
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.logo-icon {
+  font-size: 2.5rem;
+  color: var(--ascent-secondary);
+}
+
+.nav-content {
+  display: flex;
+  gap: 3vw;
+}
+
+.nav-item {
+  width: fit-content;
+  cursor: pointer;
+}
+
+.nav-item-active {
+  color: var(--ascent-secondary);
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.button {
+  cursor: pointer;
+  padding: 0.7rem 1.2rem;
+  border-radius: 2rem;
+  border: 1px solid #ffffff50;
+}
+
+.account {
+  background-color: var(--ascent-primary);
+  color: var(--bg);
+  border-color: var(--bg);
+}
+
+.start {
+  background-color: var(--ascent-secondary);
+  color: var(--bg);
+  border-color: var(--bg);
+  padding: 0.5rem 1.5rem;
+}
+
+.how {
+  border-color: #fff;
+  padding: 0.5rem 1.5rem;
+}
+
+.overlap1 {
+  border: 1px solid var(--bg);
+  background: url("https://images.meesho.com/images/products/139776826/o9kdd_256.webp");
+  background-size: contain;
+}
+.overlap2 {
+  border: 1px solid var(--bg);
+  position: relative;
+  right: 1.9rem;
+  background: url("https://www.ogdmart.com/attachments/shop_images/1596010638/Money_Plant_In_White_Pot.jpg");
+  background-size: contain;
+}
+.overlap3 {
+  border: 1px solid var(--bg);
+  position: relative;
+  right: 3.9rem;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvn-0xt6qvSxOLtEcjij2t3miK1IG7Lnd1IhvgwNa-xikhehxOnf44bxSlMLzccP0BAvU&usqp=CAU");
+  background-size: contain;
+}
+
+.master {
+  display: flex;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 5rem 3rem 5rem;
+  gap: 3rem;
+  width: 60%;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.right {
+  width: 40%;
+  /* background-color: #0b1022; */
+}
+
+.master-image {
+  width: 100%;
+}
+
+.step-container {
+  display: flex;
+  justify-content: center;
+  color: var(--bg);
+  padding: 0 3rem 3rem 3rem;
+}
+
+.step {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  gap: 1rem;
+  border: 1px solid var(--bg);
+}
+
+.step-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  color: #fff;
+  background-color: var(--bg);
+}
+
+.step-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.step-title {
+  font-weight: 500;
+}
+
+.step-desc {
+  font-weight: 300;
+  font-size: 0.75rem;
+}
+
+.one {
+  background-color: var(--ascent-primary);
+  width: 40%;
+}
+
+.two {
+  background-color: var(--ascent-secondary);
+  width: 32.5%;
+}
+
+.three {
+  background-color: white;
+  width: 22.5%;
+}
+
+@media (max-width: 768px) {
+  .master {
+    flex-direction: column;
+  }
+
+  .left {
+    padding: 3rem 2rem 3rem 2rem;
+  }
+
+  .master-image {
+    width: 100%;
+    /* height: fit-content; */
+  }
+  .consult {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .master {
+    flex-direction: column;
+  }
+}
+
+.consult {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f6f6f6;
+  color: var(--bg);
+  padding: 2rem;
+}
+
+.farm-start-container {
+  display: flex;
+}
+
+.farm-start {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--bg);
+  padding: 1.2rem 2rem;
+  border-radius: 3rem;
+  color: white;
+}
+
+.farm-start-time {
+  color: var(--bg);
+  background-color: #f6f6f6;
+  border-radius: 2rem;
+  padding: 0.3rem 0.6rem;
+}
+
+.info-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  /* aspect-ratio: 1/1; */
+  background-color: var(--ascent-primary);
+  color: black;
+  border: 1px solid var(--bg);
+  font-size: 2.5rem;
+  border-radius: 50%;
+}
+.info-icon-leaf {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.consult-buttons {
+  display: flex;
+}
+
+.consult .button {
+  background-color: var(--ascent-secondary);
+  border-color: var(--bg);
+  white-space: nowrap;
+}
+
+.consult .onex {
+  border-radius: 2rem;
+  z-index: 6;
+  width: 15vh;
+}
+.consult .twox {
+  border-radius: 2rem;
+  width: 14vh;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  right: 2rem;
+  z-index: 4;
+}
+.consult .threex {
+  border-radius: 2rem;
+  width: 15vh;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  right: 4rem;
+  z-index: 2;
+}
+
+
+.contact .button {
+  background-color: var(--ascent-primary);
+}
+
+.consult-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.test1 {
+  height: 2.3rem;
+}
+
+.Grow-Vertically {
+  font-weight: bolder;
+}
+
+.urban-Areas {
+  font-weight: 600;
+  background-color: var(--ascent-secondary);
+  color: var(--bg);
+}
